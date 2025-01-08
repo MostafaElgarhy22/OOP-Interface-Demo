@@ -88,6 +88,26 @@ using OOP_Interface.Interface_Example03;
 
 
             #endregion
+            #region Built-in Interfaces [ICompareable]
+
+            //Employee[] employees =
+            //{
+            //    new Employee() {Id = 10, Name = "Ahmed", Salary = 8_000},
+            //    new Employee() {Id = 20, Name = "Omnia", Salary = 2_000},
+            //    new Employee() {Id = 30, Name = "Nadia", Salary = 10_000},
+            //    new Employee() {Id = 40, Name = "Omar", Salary  = 6_000},
+            //};
+
+
+            //Array.Sort(employees);
+
+            //foreach (Employee employee in employees)
+            //    Console.WriteLine(employee);
+
+         
+
+          
+            #endregion
 
         }
     }
