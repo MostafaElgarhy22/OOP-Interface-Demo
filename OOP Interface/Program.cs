@@ -1,4 +1,5 @@
 ﻿using OOP_Interface.Interface_Example01;
+using OOP_Interface.Interface_Example03;
 
 namespace OOP_Interface.Interface_Example02
 {
@@ -49,6 +50,18 @@ namespace OOP_Interface.Interface_Example02
 
             //TypeC serirsByFour = new TypeC();
             //PrintTenNumbersFromSeries(serirsByFour);
+            #endregion
+            #region Interface Example 03
+
+            Airplane airplane = new Airplane();
+            airplane.Speed = 520;
+
+            IMovable movable = airplane;
+            movable.Forward();
+
+            IFlyable flyable = airplane;
+            flyable.Forward();
+
             #endregion
         }
     }
