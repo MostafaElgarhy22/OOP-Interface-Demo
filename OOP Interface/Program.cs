@@ -1,9 +1,25 @@
 ﻿using OOP_Interface.Interface_Example01;
 
-namespace OOP_Interface
+namespace OOP_Interface.Interface_Example02
 {
+
     internal class Program
     {
+        #region Interface Example 02
+        //static void PrintTenNumbersFromSeries(ISeries series)
+        //{
+        //    if (series is null) 
+        //        return;
+        //    for (int i = 1;  i <= 10; i++)
+        //    {
+        //        Console.WriteLine($"{series.Current}");
+        //        series.GetNext();               
+        //    }
+
+        //    series.Reset();
+        //    Console.WriteLine();
+        //}
+        #endregion
         static void Main(string[] args)
         {
             #region Interface Example 01
@@ -22,6 +38,17 @@ namespace OOP_Interface
             //typeA.MyProperty = 10;
             //typeA.MyMethod();
             //typeA.Print();
+            #endregion
+            #region Interface Example 02
+
+            //TypeA seriesByTwo = new TypeA();
+            //PrintTenNumbersFromSeries(seriesByTwo);
+
+            //Type_B seriesByThree = new Type_B();
+            //PrintTenNumbersFromSeries(seriesByThree);
+
+            //TypeC serirsByFour = new TypeC();
+            //PrintTenNumbersFromSeries(serirsByFour);
             #endregion
         }
     }
