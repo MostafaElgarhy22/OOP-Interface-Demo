@@ -1,7 +1,8 @@
 ﻿using OOP_Interface.Interface_Example01;
 using OOP_Interface.Interface_Example03;
 
-namespace OOP_Interface.Interface_Example02
+ namespace OOP_Interface.Built_in_Interfaces
+
 {
 
     internal class Program
@@ -53,16 +54,41 @@ namespace OOP_Interface.Interface_Example02
             #endregion
             #region Interface Example 03
 
-            Airplane airplane = new Airplane();
-            airplane.Speed = 520;
+            //Airplane airplane = new Airplane();
+            //airplane.Speed = 520;
 
-            IMovable movable = airplane;
-            movable.Forward();
+            //IMovable movable = airplane;
+            //movable.Forward();
 
-            IFlyable flyable = airplane;
-            flyable.Forward();
+            //IFlyable flyable = airplane;
+            //flyable.Forward();
 
             #endregion
+            #region Built-in Interfaces [ICloneable]
+
+            //Employee employee01 = new Employee() { Id = 10 , Name = "Ahmed", Salary = 8_000};
+            //Employee employee02 = new Employee() { Id = 20, Name = "Ahmed", Salary = 3_000 };
+
+            //Console.WriteLine($"employee01.GetHashCode() = {employee01.GetHashCode()}");
+            //Console.WriteLine($"employee01.GetHashCode() = {employee02.GetHashCode()}");
+
+            //employee02 = (Employee)employee01.Clone();  //2. Deep Copy Using Clone
+            //// clone Method : this method generrates new Object with new and Different Identity
+            ////              : this Object will Have The same state[Data]of the caller Object
+
+            //Console.WriteLine("After Deep Copy : ");
+
+
+            //Console.WriteLine($"employee01.GetHashCode() = {employee01.GetHashCode()}");
+            //Console.WriteLine($"employee01.GetHashCode() = {employee02.GetHashCode()}");
+
+            //Console.WriteLine("------------------------");
+            //Console.WriteLine($"Employee01 = {employee01}");
+            //Console.WriteLine($"Employee02 = {employee02}");
+
+
+            #endregion
+
         }
     }
 }
